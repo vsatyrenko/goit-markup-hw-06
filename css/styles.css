@@ -214,8 +214,6 @@ background-color: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-/*backdrop-modal*/
-
 .backdrop{
     position: fixed;
     top: 0;
@@ -225,7 +223,7 @@ background-color: var(--accent-color);
     background-color:  rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition-property: opacity var(--timing-fuction), visibility var(--timing-fuction);
+    transition: opacity var(--timing-fuction), visibility var(--timing-fuction);
    
 }
 
@@ -244,8 +242,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 
-width: 528px;
-height: 581px;
+width: 221px;
+height: 536px;
 
 background-color: rgba(255, 255, 255, 1);
 
@@ -430,27 +428,24 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
-.social-networks-item {
+.social-networks-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
-    color: var(--icon-color);
-    transition-property:color var(--timing-fuction), background-color var(--timing-fuction);
-
-}
-
-.social-networks:hover {
     border-radius: 50%;
+    color: var(--icon-color);
+    transition:color var(--timing-fuction), background-color var(--timing-fuction);
+
 }
 
-.social-icon {
+.social-icon{
     fill: currentColor;
 }
 
-.social-networks-item:hover,
-.social-networks-item:focus {
+.social-networks-link:hover,
+.social-networks-link:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 
@@ -485,7 +480,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--clients-border);
     border: 1px solid var(--clients-border);
     border-radius: 4px;
-    transition-property:border var(--timing-fuction), color var(--timing-fuction);
+    transition:border var(--timing-fuction), color var(--timing-fuction);
 }
 
 .site-clients:hover,
@@ -531,7 +526,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     line-height: 1.62;
     background: var(--back-buttons-color);
     color: var(--title-color);
-    transition-property:color var(--timing-fuction), box-shadow var(--timing-fuction) ;
+    transition:color var(--timing-fuction), box-shadow var(--timing-fuction), background-color var(--timing-fuction) ;
 
 
 
@@ -699,14 +694,14 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .block-mail {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition-property:color var(--timing-fuction), transform var(--timing-fuction);
+    transition:color var(--timing-fuction);
 
 }
 
 .block-number {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    transition-property:color var(--timing-fuction), transform var(--timing-fuction);
+    transition:color var(--timing-fuction);
 
 }
 
@@ -733,32 +728,45 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--white-color);
 }
 
-.social-networks-item {
+.social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: background-color var(--timing-fuction);
 }
 
-.join-icon {
+.join-icon{
     fill: var(--white-color);
 }
 
-/*Email-input*/
-
-.email-action{
-    margin-bottom: 20px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: var(--white-color);
+.social-networks:hover,
+.social-networks:focus{
+    background-color: var(--accent-color);
 }
 
-.input-mail{
+
+
+/*Email-input
+
+.email-action {
+    margin-bottom: 20px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.input-mail {
     display: flex;
     justify-content: center;
     column-gap: 10px;
     background-color: var(--block-color);
 }
 
-.input{
+.input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -768,23 +776,24 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
 
-.button-input{
+.button-input {
     border: none;
-        border-radius: 4px;
-        padding: 10px 30px;
-        display: flex;
-        align-items: center;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
-        background: var(--accent-color);
-        color: var(--white-color);
-        cursor: pointer;
-        gap: 10px;
+    border-radius: 4px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+    gap: 10px;
 }
 
 .button-input:hover,
 .button-input:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+*/
