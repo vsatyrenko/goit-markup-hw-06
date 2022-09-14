@@ -214,6 +214,8 @@ background-color: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+/*Backdrop, modal*/
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -242,8 +244,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 
-width: 221px;
-height: 536px;
+width: 528px;
+height: 581px;
 
 background-color: rgba(255, 255, 255, 1);
 
@@ -276,6 +278,31 @@ border: 1px solid rgba(0, 0, 0, 0.1);
         url(../images/Img\ Hero.jpg);
 
     background-position: center;
+}
+
+.modal-tittle{
+    margin-top:40px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.form-fild{
+    
+    display: flex;
+    flex-direction: column;
+
+    margin:10px 40px;
+    
+}
+
+.modal-input{
+    
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
 }
 
 
@@ -750,7 +777,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 
 
 
-/*Email-input
+/*Email-input*/
 
 .email-action {
     margin-bottom: 20px;
@@ -796,4 +823,3 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .button-input:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-*/
