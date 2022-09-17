@@ -344,7 +344,8 @@ color: var(--primary-color);
     top: 70%;
     left: 12px;
     transform: translateY(-50%);
-    transition: color var(--timing-fuction);
+    fill: var(--title-color);
+    transition: fill var(--timing-fuction);
 }
 
 textarea {
