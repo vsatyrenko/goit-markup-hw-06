@@ -270,6 +270,7 @@ padding: 0;
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
 cursor: pointer;
+transition: fill var(--timing-fuction);
 }
 
 .close-icon:hover,
