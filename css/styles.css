@@ -244,6 +244,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 
+padding: 40px;
+
 width: 528px;
 height: 581px;
 
@@ -251,6 +253,7 @@ background-color: rgba(255, 255, 255, 1);
 
 transform: translate(-50%, -50%) scale(1);
 transition: transform var(--timing-fuction);
+
 }
     
 .button-close{
@@ -266,6 +269,12 @@ background-color: transparent;
 padding: 0;
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
+cursor: pointer;
+}
+
+.close-icon:hover,
+.close-close:focus{
+    fill: var(--accent-color);
 }
 
 .fon {
@@ -281,7 +290,6 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-tittle{
-    margin-top:40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -292,7 +300,6 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 40px;
 }
 
 .modal .button{
@@ -327,7 +334,8 @@ color: var(--primary-color);
     padding-left: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    
+    cursor: pointer;
+    transition: border var(--timing-fuction);
 }
 
 .icon-modal{
@@ -336,6 +344,63 @@ color: var(--primary-color);
     top: 70%;
     left: 12px;
     transform: translateY(-50%);
+    transition: color var(--timing-fuction);
+}
+
+textarea {
+    resize: none;
+}
+.coment-form{
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.form-fild-check{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.policy-label{
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+    line-height: 1.7;
+    gap: 10px;
+}
+
+.icon-check{
+    width: 16px;
+    height: 15px;
+    outline: 2px solid var(--title-color);
+    border-radius: 4px;
+}
+
+.checkbox:checked ~ .icon-check{
+    background-color: orange;
+    background-image: url('../images/icon-check.svg');
+    background-size: contain;
+}
+
+.modal-input:hover,
+.modal-input:focus{
+border-color: var(--accent-color);
+color: var(--accent-color);
+}
+
+.icon-modal:hover
+.icon-modal:focus{
+    fill: var(--accent-color);
+}
+
+.modal-input:focus + .icon-modal,
+.modal-input:hover + .icon-modal{
+    fill: var(--accent-color);
+}
+
+.contract{
+    color: var(--accent-color);
 }
 
 
