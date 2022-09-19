@@ -274,9 +274,8 @@ transition: fill var(--timing-fuction);
 }
 
 
-
-.close-icon:hover,
-.close-close:focus{
+.button-close:hover,
+.button-close:focus{
     fill: var(--accent-color);
 }
 
